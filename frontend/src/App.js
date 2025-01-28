@@ -1,9 +1,10 @@
 import './App.css';
+import TaskWrapper from './components/TaskWrapper';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello REACT!</h1>
+      <TaskWrapper />
     </div>
   );
 }
