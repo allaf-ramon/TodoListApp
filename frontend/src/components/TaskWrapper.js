@@ -1,5 +1,6 @@
 import React from 'react';
 import TaskForm from './TaskForm';
+import Task from './Task';
 
 export const TaskWrapper = () => {
     const [tasks, setTasks] = React.useState([]);
@@ -29,7 +30,11 @@ export const TaskWrapper = () => {
 
     return (
         <div className='TaskWrapper'>
+            <h1>Lista de Tarefas</h1>
             <TaskForm createTask={createTask} />
+            {tasks.map((task) => (
+                <Task key={task.id} task={task} />
+            ))}
         </div>
     );
 };
