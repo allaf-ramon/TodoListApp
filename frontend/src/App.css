@@ -33,7 +33,7 @@ h1 {
 
 .TaskForm {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .task-input,
@@ -43,7 +43,7 @@ h1 {
     border: 1px solid #8758ff;
     padding: 0.5rem 1rem;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     width: 100%;
     color: #fff;
 }
@@ -56,6 +56,11 @@ h1 {
     color: #ffffff4d;
 }
 
+.task-input,
+.task-input-select:disabled {
+    color: #fefefe;
+}
+
 .task-input-select option {
     background: #2a2a2a;
     color: #fff;
@@ -63,6 +68,8 @@ h1 {
 }
 
 .task-btn {
+    display: block;
+    margin: 0 auto;
     background: #8758ff;
     color: #fff;
     border: none;
@@ -70,6 +77,38 @@ h1 {
     cursor: pointer;
     margin-bottom: 1rem;
     width: 25%;
+    transition: 0.3s;
+}
+
+.task-btn:hover {
+    background: #6a3ff5;
+}
+
+.task-btn-group {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-remove {
+    background: #ff5e5e;
+    transition: 0.3s;
+}
+
+.btn-remove:hover {
+    background: #ff3b3b;
+}
+
+.btn-back {
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background: #8758ff
 }
 
 .Task {
@@ -82,4 +121,9 @@ h1 {
     padding: 0.75rem 1rem;
     border-radius: 5px;
     margin-bottom: 1rem;
+}
+
+.task-link {
+    text-decoration: none;
+    color: inherit;
 }
