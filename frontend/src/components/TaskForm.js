@@ -22,7 +22,7 @@ export const TaskForm = ({ createTask }) => {
                 <option value=''>Status da Tarefa</option>
                 <option value='NOT_STARTED'>Não Iniciada</option>
                 <option value='IN_PROGRESS'>Em Andamento</option>
-                <option value='COMPLETED'>Completa</option>
+                <option value='COMPLETED'>Concluída</option>
             </select>
             <button type='submit' className='task-btn'>Adicionar Tarefa</button>
         </form>

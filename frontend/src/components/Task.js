@@ -3,7 +3,7 @@ import React from 'react';
 export const Task = ({ task }) => {
     return (
         <div className='Task'>
-            <p>{task.title}</p>
+            <h3>{task.title}</h3>
         </div>
     );
 };
